@@ -16,6 +16,9 @@ module ActiveJob
       # Queue in which the job will reside.
       attr_writer :queue_name
 
+      # ID optionally provided by adapter
+      attr_accessor :provider_job_id
+
       # I18n.locale to be used during the job.
       attr_accessor :locale
     end
